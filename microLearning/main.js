@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import App from './App'
-
-import store from './store'
+import appGlobalPlugin from './base/plugins/appGlobalPlugin.js'
 
 Vue.config.productionTip = false
 
-Vue.prototype.$store = store
+Vue.use(appGlobalPlugin)
 
 App.mpType = 'app'
-
 const app = new Vue({
-    store,
     ...App
 })
 app.$mount()

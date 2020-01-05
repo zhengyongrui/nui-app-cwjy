@@ -2,25 +2,34 @@
 const USERS_KEY = 'USERS_KEY';
 const STATE_KEY = 'STATE_KEY';
 
-const getUsers = function () {
-    let ret = '';
-    ret = uni.getStorageSync(USERS_KEY);
-    if (!ret) {
-        ret = '[]';
-    }
-    return JSON.parse(ret);
+import Vue from 'vue'
+
+const thisVue = Vue;
+
+const getUsers = function() {
+	let ret = '';
+	ret = uni.getStorageSync(USERS_KEY);
+	if (!ret) {
+		ret = '[]';
+	}
+	return JSON.parse(ret);
 }
 
-const addUser = function (userInfo) {
-    let users = getUsers();
-    users.push({
-        account: userInfo.account,
-        password: userInfo.password
-    });
-    uni.setStorageSync(USERS_KEY, JSON.stringify(users));
+const addUser = function(userInfo) {
+	let users = getUsers();
+	users.push({
+		account: userInfo.account,
+		password: userInfo.password
+	});
+	uni.setStorageSync(USERS_KEY, JSON.stringify(users));
+}
+
+const login = function(UserInfo) {
+	return thisVue.http.postFormData('/login', UserInfo);
 }
 
 export default {
-    getUsers,
-    addUser
+	getUsers,
+	addUser,
+	login
 }
