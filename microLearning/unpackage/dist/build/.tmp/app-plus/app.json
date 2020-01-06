@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "modules/login/login",
+    "modules/main/main",
+    "modules/reg/reg",
+    "modules/pwd/pwd",
+    "modules/user/user"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "microLearning",
+  "compilerVersion": "2.5.1",
+  "usingComponents": {}
+}

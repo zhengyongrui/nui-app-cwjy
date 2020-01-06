@@ -38,9 +38,7 @@ function postFormData(url, data, config) {
  * @returns
  */
 function get(url, data, config) {
-	debugger
 	return new Promise((resolve, reject) => {
-		debugger
 		uni.request(Object.assign(
 			config, {
 				url: httpServiceConfig.baseURL + url,
@@ -83,7 +81,6 @@ function post(url, data, config) {
 }
 
 function processResponseData(response, resolve, reject) {
-	debugger
 	const errorHandler = (error) => {
 		console.error(error);
 		reject(error);
