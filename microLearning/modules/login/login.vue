@@ -67,7 +67,10 @@
 			},
 			// 跳转到主页
 			toMainPage() {
-				
+				debugger
+				this.$routeUtil.replace({
+					name: '/projects/learningModule/practice/pages/PracticeMainPage'
+				})
 			}
 		}
 	}

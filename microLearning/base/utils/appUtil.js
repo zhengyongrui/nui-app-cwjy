@@ -1,7 +1,3 @@
-import Vue from 'vue';
-
-const thisVue = Vue;
-
 /**
  * 显示toast
  * @param { Object|String } toastParam

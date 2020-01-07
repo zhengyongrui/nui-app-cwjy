@@ -1,39 +1,38 @@
 {
-    "pages": [ //pages数组中第一项表示应用启动页,
-        {
-            "path": "modules/login/login",
-            "style": {
-                "navigationBarTitleText": "登录"
-            }
-        }, {
-            "path": "modules/main/main",
-            "style": {
-                "navigationBarTitleText": "登录模板"
-            }
-        }, {
-            "path": "modules/reg/reg",
-            "style": {
-                "navigationBarTitleText": "注册"
-            }
-        }, {
-            "path": "modules/pwd/pwd",
-            "style": {
-                "navigationBarTitleText": "找回密码"
-            }
-        }, {
-            "path": "modules/user/user",
-            "style": {
-                "navigationBarTitleText": "我的"
-            }
-        }
-        ,{
-            "path" : "projects/learningModule/practice/pages/PracticeMainPage/PracticeMainPage",
-            "style" : {}
-        }
-    ],
-    "globalStyle": {
-        "navigationBarTextStyle": "white",
-        "navigationBarBackgroundColor": "#0faeff",
-        "backgroundColor": "#fbf9fe"
-    }
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "modules/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "modules/main/main",
+			"style": {
+				"navigationBarTitleText": "登录模板"
+			}
+		}, {
+			"path": "modules/reg/reg",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "modules/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		}, {
+			"path": "modules/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}, {
+			"path": "projects/learningModule/practice/pages/PracticeMainPage",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0faeff",
+		"backgroundColor": "#fbf9fe"
+	}
 }

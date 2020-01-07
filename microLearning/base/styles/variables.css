@@ -1,0 +1,217 @@
+// 字体
+$font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+// 字体
+$fontSize10: 1rem;
+$fontSize11: 1.1rem;
+$fontSize12: 1.2rem;
+$fontSize13: 1.3rem;
+$fontSize14: 1.4rem;
+$fontSize15: 1.5rem;
+$fontSize16: 1.6rem;
+$fontSize17: 1.7rem;
+$fontSize18: 1.8rem;
+$fontSize19: 1.9rem;
+$fontSize20: 2.0rem;
+$fontSize21: 2.1rem;
+$fontSize22: 2.2rem;
+$fontSize23: 2.3rem;
+$fontSize24: 2.4rem;
+$fontSize25: 2.5rem;
+$fontSize26: 2.6rem;
+$fontSize30: 3.0rem;
+$fontSize32: 3.2rem;
+$fontSize33: 3.3rem;
+
+
+$theme-color: #149C81 !default;
+$light-theme-color: #32CFB0 !default;
+
+// 字体颜色
+$font-default-color: #020F17 !default;
+$font-second-color: #666 !default;
+$font-info-color: #8c9194 !default;
+$font-important-color: $theme-color !default;
+$font-select-color: #83D4C4 !default;
+$font-with-bg-color: #FFF !default;
+$font-name-primary-color: #576b95 !default;
+$font-info-light-color: #b8bec2 !default;
+
+// 边框颜色
+$border-default-color: #F2F4F5 !default;
+$border-dark-color: #DFE1E3 !default;
+
+// 背景颜色
+$bg-default-color: #FFF !default;
+$bg-info-color: #F2F4F5 !default;
+$bg-info-color-half-opacity: rgba(242, 244, 245, 0.5) !default;
+$bg-gray-color: #5c6063 !default;
+$bg-primary-color: #83D4C4 !default;
+
+// 图片默认背景颜色
+$bg-image-default-color: #F2F4F5 !default;
+
+// 骨架屏背景色
+$skeleton-bg-color: #F2F4F5 !default;
+
+// 红点样式
+$red-dot-color: #e62129 !default;
+
+// svg颜色
+$svg-default-color: #8C9194 !default;
+$svg-primary-color: #149C81 !default;
+$svg-light-color: #DFE1E3 !default;
+$svg-active-color: #32CFB0 !default;
+$svg-white-color: #FFF !default;
+$svg-black-color: #020F17 !default;
+
+// 按钮样式
+$button-height: 48px;
+$button-radius-width: 5px;
+$button-primary-bg-color: #32CFB0 !default;
+$button-primary-bg-active-color: #149C81 !default;
+
+$button-default-bg-color: #FFF !default;
+$button-default-bg-active-color: #F2F4F5 !default;
+$button-default-border-color: #DFE1E3 !default;
+$button-font-color-with-bg: #FFF !default;
+$button-font-primary-color: $theme-color !default;
+$button-font-disable-color: #DFE1E3 !default;
+$button-bg-disable-color: #F2F4F5 !default;
+
+// 标签按钮默认色
+$label-button-default-bg-color: #FFF !default;
+$label-button-default-border-color: #8c9194 !default;
+$label-button-default-font-color: #8c9194 !default;
+$label-button-default-bg-active-color: #F2F4F5 !default;
+//标签按钮选中色
+$label-button-select-bg-color: #DAFAF4 !default;
+$label-button-select-border-color: $theme-color !default;
+$label-button-select-font-color: $theme-color !default;
+
+// 头部样式
+$app-header-default-color: #FFF !default;
+$app-header-border-color: #DFE1E3 !default;
+
+$jump-arrow-color: #C8C8CD !default;
+
+// 列表项按下
+$list-item-active-bg-color: #FFF !default;
+
+// tabbar颜色
+$tabbar-select-font-color: $theme-color !default;
+$tabbar-line-color: #DFE1E3 !default;
+
+// 外部链接图标颜色
+$external-link-icon-color: #00A2EF !default;
+
+// commonHint图标和文字颜色
+$common-hint-text-color: #020F17 !default;
+
+// 复选框颜色
+$check-box-default-color: #8c9194 !default;
+$check-box-select-color: $theme-color !default;
+$check-box-circle-default-border-color: #8c9194 !default;
+$check-box-circle-select-bg-color: #32CFB0 !default;
+
+// 人员选择组件
+$user-item-border-color: #666 !default;
+$user-item-font-color: #666 !default;
+
+// 日期组件通用样式
+$calendar-bg-color: #FFF !default;
+$calendar-week-title-bg-color: #F2F4F5 !default;
+$calendar-toolbar-bg-color: #F2F4F5 !default;
+$calendar-today-font-color: #024DB0 !default;
+$calendar-select-font-color: $theme-color !default;
+$calendar-select-day-bg-color: #83D4C4 !default;
+$calendar-dot-color: #83D4C4 !default;
+$calendar-toggle-icon-color: #8BD5C4 !default;
+$calendar-status-end-bg-color: #c7cbcf !default;
+// 设计业务状态
+$calendar-status-ing-bg-color: #7acfbe !default;
+$calendar-status-not-begin-bg-color: #72a0db !default;
+
+// vuxComfirm组件边框颜色
+$vux-comfirm-border-color: #dfe1e3 !default;
+$vux-comfirm-font-color: $font-default-color !default;
+$vux-comfirm-btn-primary-font-color: $theme-color !default;
+$vux-comfirm-textarea-font-color: #8c9194 !default;
+$vux-comfirm-outside-border-color: transparent !default;
+$vux-textarea-counter-color: #B2B2B2 !default;
+
+// 表单
+$detail-form-title-color: #8C9194 !default;
+
+// input
+$input-border-color: #DFE1E3 !default;
+
+// 搜索框背景颜色
+$search-toolbar-bg-color: #F2F4F5 !default;
+
+// vux组件的变量
+$scroller-mask-bg:
+linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.6)),
+linear-gradient(to top, rgba(255,255,255,0.95), rgba(255,255,255,0.6)) !default;
+
+// menu
+$left-menu-default-border-color: #020F17 !default;
+$left-menu-select-border-color: $theme-color !default;
+$left-menu-default-text-color: #020F17 !default;
+$left-menu-select-text-color: $theme-color !default;
+
+// swiper组件
+$swiper-indicator-active-color: $light-theme-color !default;
+
+$address-user-detail-avatar-border: #abeee1 !default;
+$address-user-detail-avatar-box-shadow-color: rgb(20, 156, 129) !default;
+
+// 多条件选择搜索组件placeholder颜色
+$muti-search-input-placeholder-color: $theme-color !default;
+
+// 挑战达人搜索款
+$ygmatch-search-input-border-color: #3eb19a !default;
+$ygmatch-border-color: #95decf !default;
+$ygmatch-footer-bg-color: #CCEDE6 !default;
+$ygmatch-primary-font-color : #149C81 !default;
+$ygmatch-primary-dark-font-color: #085445 !default;
+$ygmatch-svg-primary-color: #149C81 !default;
+
+$delete-icon-primary-color: #80BDB0 !default;
+
+// 通讯录首页公司图标背景图
+$address-company-bg-color: #80DCC7 !default;
+$address-group-bg-color: #7BBDED !default;
+$address-recent-contact-bg-color: #ECB97A !default;
+$address-org-bg-color: #F18DBF !default;
+
+// 培训教材教师资源领域字段色值
+$course-teacher-field-bg-color: #e8f9f6 !default;
+$course-teacher-field-font-color:#149C81 !default;
+
+// 考试
+$exam-begin-font-primary-color: #149C81 !default;
+$exam-primary-button-bg-color: #32CFB0 !default;
+$exam-primary-button-bg-active-color: #149C81 !default;
+
+$action-sheet-primary-bg-color: #83D4C4 !default;
+
+$meeting-room-select-border-color: #149C81 !default;
+$meeting-room-select-bg-color: #DAFAF4 !default;
+
+// 审批状态
+$status-waiting-font-color: #8C9194;
+$status-waiting-border-color: #8C9194;
+$status-pass-font-color: #149C81;
+$status-pass-border-color: #149C81;
+$status-no-pass-font-color: #B02A2A;
+$status-no-pass-border-color: #B02A2A;
+$status-retract-font-color: #8C9194;
+$status-retract-border-color: #8C9194;
+$status-approving-font-color: #F08519;
+$status-approving-border-color: #F08519;
+
+// 性别
+$gender-male-color: #1296db;
+$gender-female-color: #fd7281;
+

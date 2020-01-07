@@ -1,5 +1,6 @@
 import encryptUtil from '../utils/encryptUtil.js';
 import appUtil from '../utils/appUtil.js';
+import routeUtil from '../utils/routeUtil.js'
 
 /**
  * 添加全局方法或者属性
@@ -8,6 +9,7 @@ import appUtil from '../utils/appUtil.js';
 function initVueGlobalMethods(Vue) {
   Vue.encryptUtil = encryptUtil;
 	Vue.appUtil = appUtil;
+	Vue.routeUtil = routeUtil;
 }
 
 /**
@@ -17,6 +19,7 @@ function initVueGlobalMethods(Vue) {
 function initVuePrototype(Vue) {
   Vue.prototype.$encryptUtil = encryptUtil;
 	Vue.prototype.$appUtil = appUtil;
+	Vue.prototype.$routeUtil = routeUtil;
 }
 
 /**
