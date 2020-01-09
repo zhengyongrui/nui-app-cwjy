@@ -12,7 +12,19 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+	
+	$font-select-color: #83D4C4 !default;
+	html, body {
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  line-height: 1.5;
+	  font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	  color: #020F17;
+		font-size: 10px;
+	}
+	
 	/*每个页面公共css */
 	page {
 		min-height: 100%;

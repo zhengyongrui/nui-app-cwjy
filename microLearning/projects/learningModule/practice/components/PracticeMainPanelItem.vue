@@ -40,8 +40,7 @@
 </script>
 
 <style lang='scss' scoped>
-	$fontSize13: 1.3rem;
-
+	
 	.flex-button {
 		flex: 1 1 auto;
 		width: 200px;

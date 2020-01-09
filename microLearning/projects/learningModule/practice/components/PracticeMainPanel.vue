@@ -451,7 +451,6 @@
 </script>
 
 <style lang='scss' scoped>
-	$fontSize13: 1.3rem;
 	.practice-main-panel {
 		flex: 1 1 300px;
 		height: 300px;
