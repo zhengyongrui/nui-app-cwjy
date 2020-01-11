@@ -14,7 +14,7 @@ function initVueGlobalMethods(Vue) {
  * @param { Object } Vue
  */
 function initVuePrototype(Vue) {
-  Vue.prototype.$httpService = httpService;
+  Vue.prototype.$http = httpService.getHttpInstance();
 }
 
 /**

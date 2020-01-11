@@ -1,6 +1,7 @@
 import encryptUtil from '../utils/encryptUtil.js';
 import appUtil from '../utils/appUtil.js';
 import routeUtil from '../utils/routeUtil.js'
+import localStorageUtil from '../utils/localStorageUtil.js'
 
 /**
  * 添加全局方法或者属性
@@ -10,6 +11,7 @@ function initVueGlobalMethods(Vue) {
   Vue.encryptUtil = encryptUtil;
 	Vue.appUtil = appUtil;
 	Vue.routeUtil = routeUtil;
+	Vue.localStorageUtil = localStorageUtil;
 }
 
 /**
@@ -20,6 +22,7 @@ function initVuePrototype(Vue) {
   Vue.prototype.$encryptUtil = encryptUtil;
 	Vue.prototype.$appUtil = appUtil;
 	Vue.prototype.$routeUtil = routeUtil;
+	Vue.prototype.localStorageUtil = localStorageUtil;
 }
 
 /**

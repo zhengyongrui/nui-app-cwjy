@@ -6,3 +6,15 @@ export const practiceButtonTypes = {
   RANDOM: 'randomButton',
   SPACE: 'nothing'
 }
+
+export const examinationTabTypes = {
+  EXAMINE_LIST: 'examineList',
+  EXAMINE_RECORD: 'examineRecord',
+  EXAMINE_RANKING_LIST: 'examineRankingList'
+}
+
+// 显示模式(考试模式，答案模式)
+export const examDisplayModeConst = {
+  EXAM: 'exam',
+  ANSWER: 'answer'
+}

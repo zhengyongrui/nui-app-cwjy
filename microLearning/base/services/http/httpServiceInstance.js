@@ -8,15 +8,14 @@ import httpServiceConfig from '../../../configs/services/http/httpServiceConfig.
  * @returns
  */
 function postFormData(url, data, config) {
-	let postFormConfig = {
+	let defaultRequestConfig = {
 		header: {
 			'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
 		}
 	};
-	postFormConfig = Object.assign(postFormConfig, config);
+	let requestConfig = Object.assign(defaultRequestConfig, config);
 	return new Promise((resolve, reject) => {
-		uni.request(Object.assign(postFormConfig,
-		{
+		uni.request(Object.assign(requestConfig, {
 			url: httpServiceConfig.baseURL + url,
 			method: 'POST',
 			data: data,
@@ -38,9 +37,15 @@ function postFormData(url, data, config) {
  * @returns
  */
 function get(url, data, config) {
+	let defaultRequestConfig = {
+		header: {
+			'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+		}
+	};
+	let requestConfig = Object.assign(defaultRequestConfig, config);
 	return new Promise((resolve, reject) => {
 		uni.request(Object.assign(
-			config, {
+			requestConfig, {
 				url: httpServiceConfig.baseURL + url,
 				method: 'GET',
 				data: data,
@@ -48,9 +53,10 @@ function get(url, data, config) {
 					processResponseData(res, resolve, reject)
 				},
 				fail: (error) => {
+					debugger
 					reject(error);
 				}
-			}
+			},
 		));
 	})
 }
@@ -63,20 +69,24 @@ function get(url, data, config) {
  * @returns
  */
 function post(url, data, config) {
+	let defaultRequestConfig = {
+		header: {
+			'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+		}
+	};
+	let requestConfig = Object.assign(defaultRequestConfig, config);
 	return new Promise((resolve, reject) => {
-		uni.request(Object.assign(
-			config, {
-				url: httpServiceConfig.baseURL + url,
-				method: 'POST',
-				data: data,
-				success: (res) => {
-					processResponseData(res, resolve, reject)
-				},
-				fail: (error) => {
-					reject(error);
-				}
+		uni.request(Object.assign(requestConfig, {
+			url: httpServiceConfig.baseURL + url,
+			method: 'POST',
+			data: data,
+			success: (res) => {
+				processResponseData(res, resolve, reject)
+			},
+			fail: (error) => {
+				reject(error);
 			}
-		));
+		}));
 	})
 }
 

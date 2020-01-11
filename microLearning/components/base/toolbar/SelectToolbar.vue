@@ -4,7 +4,7 @@
       <span>{{selectItemText}}</span>
     </div>
     <div v-if="showArrowIcon && selectItemValue" class="select-arrow-icon">
-      <triangle-icon :themeType="triangleIconType"></triangle-icon>
+      <!-- <triangle-icon :themeType="triangleIconType"></triangle-icon> -->
     </div>
     <div v-if="isShowSelectListPanel" class="select-list-panel" :style="selectListPanelStyle" @click.stop="hideSelectListPanel">
       <div v-if="selectList" class="select-list-content">
@@ -19,12 +19,13 @@
 </template>
 
 <script>
-import TriangleIcon from '@/appMobileLib/base/components/icons/TriangleIcon';
+	
+// import TriangleIcon from '@/components/base/icons/TriangleIcon';
 
 export default {
   name: 'select-toolbar',
   components: {
-    TriangleIcon
+    // TriangleIcon
   },
   props: {
     selectItem: {
