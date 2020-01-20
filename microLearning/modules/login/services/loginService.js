@@ -1,6 +1,5 @@
 // 管理账号信息
-const USERS_KEY = 'USERS_KEY';
-const STATE_KEY = 'STATE_KEY';
+import { USER_STORAGE_KEY } from '@/configs/services/account/accountConfig.js'
 
 import Vue from 'vue'
 
@@ -8,7 +7,7 @@ const thisVue = Vue;
 
 const getUsers = function() {
 	let ret = '';
-	ret = uni.getStorageSync(USERS_KEY);
+	ret = uni.getStorageSync(USER_STORAGE_KEY);
 	if (!ret) {
 		ret = '[]';
 	}
@@ -21,7 +20,7 @@ const addUser = function(userInfo) {
 		account: userInfo.account,
 		password: userInfo.password
 	});
-	uni.setStorageSync(USERS_KEY, JSON.stringify(users));
+	uni.setStorageSync(USER_STORAGE_KEY, JSON.stringify(users));
 }
 
 const login = function(UserInfo) {

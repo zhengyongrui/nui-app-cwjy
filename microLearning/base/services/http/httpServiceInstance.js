@@ -1,4 +1,6 @@
-import httpServiceConfig from '../../../configs/services/http/httpServiceConfig.js'
+import httpServiceConfig from '@/configs/services/http/httpServiceConfig.js'
+import localStorageUtil from '@/base/utils/localStorageUtil.js'
+import { USER_STORAGE_KEY } from '@/configs/services/account/accountConfig.js'
 
 /**
  * 表单提交方法
@@ -53,7 +55,6 @@ function get(url, data, config) {
 					processResponseData(res, resolve, reject)
 				},
 				fail: (error) => {
-					debugger
 					reject(error);
 				}
 			},
@@ -109,6 +110,17 @@ function processResponseData(response, resolve, reject) {
 		}
 	} else {
 		errorHandler(response, reject)
+	}
+}
+
+function transferHttpRequestConfig(requestConfig) {
+	if (requestConfig) {
+		var userInfo = localStorageUtil.get(USER_STORAGE_KEY);
+		if (userInfo && userInfo.ecsToken) {
+			requestConfig.header = Object.assign({}, requestConfig.header, {
+				ecsToken: userInfo.ecsToken
+			})
+		}
 	}
 }
 

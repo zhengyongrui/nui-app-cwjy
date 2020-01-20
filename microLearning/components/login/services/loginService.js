@@ -7,7 +7,7 @@ import Vue from 'vue';
 
 const thisVue = Vue;
 
-const USER_STORAGE_KEY = 'userInfo';
+import { USER_STORAGE_KEY } from '@/configs/services/account/accountConfig.js'
 
 const IS_USER_INFO_ENCRYPT_KEY = 'isUserInfoEncrypt';
 

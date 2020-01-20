@@ -8,7 +8,7 @@ function set(key, value) {
   if (tempValue) {
     tempValue = JSON.stringify(value);
   }
-  window.localStorage.setItem(key, tempValue);
+  uni.setStorageSync(key, tempValue);
 }
 
 /**
@@ -19,7 +19,7 @@ function get(key) {
   if (!key) {
     return null;
   }
-  let value = window.localStorage.getItem(key);
+  let value = uni.getStorageSync(key);
   if (value && value !== 'undefined' && value !== 'null') {
     return JSON.parse(value);
   }
@@ -31,14 +31,14 @@ function get(key) {
  * @param { String } key
  */
 function remove(key) {
-  window.localStorage.removeItem(key);
+  uni.removeStorageSync(key);
 }
 
 /**
  * 清空本地缓存信息
  */
 function clear() {
-  window.localStorage.clear();
+  uni.clearStorage();
 }
 
 export default {

@@ -127,12 +127,10 @@
 					pageNo: 1,
 					pageSize: 20
 				};
-				debugger
 				this.$http.get('/topicCategory/findWebTopicCategoryList', {
 					params: param
 				}).then(
 					res => {
-						debugger
 						if (!res || !res.data || res.data.length === 0) {
 							this.practiceVo.categoryList = [];
 							if (this.showNoPracticeCategoryDataKey) {
